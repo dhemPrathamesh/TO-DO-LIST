@@ -1,0 +1,120 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+#menu-btn {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    background-color: #333;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+#menu li:last-child {
+    border-bottom: none;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.task-list {
+    margin-bottom: 2em;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-list li:last-child {
+    border-bottom: none;
+}
+
+.add-task {
+    margin-top: 2em;
+}
+
+#task-input {
+    padding: 0.5em;
+    width: 100%;
+}
+
+#add-task-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #444;
+}
+
+.search-task {
+    display: none;
+}
+
+.priority-task {
+    display: none;
+}
+
+.timer-task {
+    display: none;
+}

@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List App</h1>
+        <button id="menu-btn">Menu</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="#" id="search-btn">Search</a></li>
+                <li><a href="#" id="clear-completed-btn">Clear Completed</a></li>
+                <li><a href="#" id="priority-btn">Priority</a></li>
+                <li><a href="#" id="timer-btn">Timer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <ul id="task-list">
+            </ul>
+        </section>
+        <section class="add-task">
+            <h2>Add Task</h2>
+            <input type="text" id="task-input" placeholder="Enter task">
+            <button id="add-task-btn">Add Task</button>
+        </section>
+        <section class="search-task" id="search-task">
+            <h2>Search Tasks</h2>
+            <input type="text" id="search-input" placeholder="Search tasks">
+            <button id="search-btn">Search</button>
+            <ul id="search-results">
+            </ul>
+        </section>
+        <section class="priority-task" id="priority-task">
+            <h2>Priority Tasks</h2>
+            <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="priority-btn">Set Priority</button>
+        </section>
+        <section class="timer-task" id="timer-task">
+            <h2>Timer</h2>
+            <button id="start-timer-btn">Start Timer</button>
+            <button id="stop-timer-btn">Stop Timer</button>
+            <p id="timer-display">00:00:00</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
